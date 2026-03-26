@@ -58,7 +58,6 @@ The query:
 
 ## SQL Query
 
-
 with fb_joined as (
     select f.ad_date, c.campaign_name, a.adset_name, f.spend, f.impressions, f.reach, f.clicks, f.leads, f.value
     from facebook_ads_basic_daily f
@@ -129,6 +128,7 @@ select
     ba.romi          as adset_romi
 from best_campaign bc
 join best_adset ba on ba.campaign_name = bc.campaign_name;
+
 
 
 ---
